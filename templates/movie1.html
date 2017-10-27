@@ -1,0 +1,49 @@
+{% extends "movietemplate.html" %}
+{% block content %}
+<html>
+<head>
+</head>
+<link href="{{ url_for('static', filename='bootstrap-3.3.5-dist/css/bootstrap.css') }}" rel="stylesheet" />
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 400px;
+    margin-top: 100px;
+    }
+</style>
+
+
+<body>
+  <div>
+  <table align="center", width =500px >
+  <tr>
+     <img height="300" width="300" src="{{var1.Image}}" align="left"><td><h2>{{var1.Title}}</h2></td><td><h2>{{var1.ReleaseDate}}</h2></td><td><h2>{{var1.PG}}</h2></td>
+    </tr>
+    <tr>
+      <td colspan="3">
+       {{var1.ShortDescription}}
+       </td>
+     </tr>
+  </table>
+  
+  <table>
+    <tr>
+      <th><h3>Director:</h3></th><td><h4>{{var1.Director}}</h4></td>
+    </tr>
+    <tr>
+      <th><h3>Actors:</h3></th><td><h4>{{var1.Actors}}</h4></td>
+    </tr>
+    <tr>
+      <th><h3>Genre:</h3></th><td><h4>{{var1.Genre}}</h4></td>
+    </tr>
+    <tr>
+      <th><h3>Runtime:</h3></th><td><h4>{{var1.Runtime}}</h4></td>
+    </tr>
+  </table> 
+  </div>
+</body> 
+</html>
+
+{% endblock %}

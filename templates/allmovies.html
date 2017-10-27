@@ -1,0 +1,44 @@
+{% extends "movietemplate.html" %}
+{% block content %}
+<html>
+<head>
+</head>
+
+<style>
+  table {
+    margin-top=100px;
+}
+</style>
+
+<body>
+<table>
+  <tr>
+    <td>
+    <a href="/allmovie/theshining">{{theshining.Title}}  {{theshining.ReleaseDate}}</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <a href="/allmovie/thedeparted">{{thedeparted.Title}}  {{thedeparted.ReleaseDate}}</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <a href="/allmovie/thewolfofwallstreet">{{thewolfofwallstreet.Title}}   {{thewolfofwallstreet.ReleaseDate}}</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <a href="/allmovie/savingprivateryan">{{savingprivateryan.Title}}  {{savingprivateryan.ReleaseDate}}</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <a href="/allmovie/fullmetaljacket">{{fullmetaljacket.Title}}  {{fullmetaljacket.ReleaseDate}}</a>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
+{% endblock %}
